@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quản lý sản phẩm</title>
+<link rel="shortcut icon" href="../images/icon/favicon.ico">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body onLoad="showProductList(0);hello()">
+<div id="wrap">
+	<div id="leftmenu"  class="">
+		<div class="logo"><img src="..\img\iconmenu.png" alt="Menu"></div>
+		<ul>
+			<li><img src="../images/icon/home.svg"><a href="../index.html">Trang chủ</a></li>
+			<li><img src="../images/icon/shoe.svg"><a href="product.html">Sản phẩm</a></li>
+			<li><img src="../images/icon/bill.svg"><a href="bill.html">Đơn hàng</a></li>
+			<li><img src="../images/icon/multiple-users.svg"><a href="user.html">Khách hàng</a></li>
+		</ul>
+	</div>
+	<div id="maincontent">
+		<div id="nav">
+			<div id="hello">
+			</div>
+		</div>
+		<div id="content">
+			<div id="leftsection">
+				<div id="maintable">
+					<h1>Danh Sách Các Mặt Hàng</h1>
+					<table id="productlist">
+					</table>
+					<div id="pagination"></div>
+				</div>
+			</div>
+			<div id="rightsection">
+				<div class="subsection">
+					<h1>TÌM KIẾM SẢN PHẨM</h1>
+					<form onkeyup="searchproduct()" onchange="searchproduct()">
+					<label for="searchproductname">Tên sản phẩm</label>
+					<input type="text" id="searchproductname">
+					<label for="searchproductbrand">Loại mô hình</label>
+					<select id="searchproductbrand">
+						<option value="all" selected>ALL</option>
+						<option value="gundam">Gundam</option>
+						<option value="honkai star rail">Honkai Star Rail</option>
+						<option value="genshin impact">Genshin Impact</option>
+						<option value="zenless zone zero">Zenless Zone Zero</option>
+						<option value="honkai impact 3">Honkai Impact 3</option>
+					</select>
+					</form>
+				</div>
+				<div class="subsection">
+					<h1>THÊM SẢN PHẨM</h1>
+					<form>
+					<label for="productname">Tên sản phẩm</label>
+					<input type="text" id="productname">
+					<label for="brand">Loại mô hình</label>
+					<select id="brand">
+						<option value="all" selected>ALL</option>
+						<option value="gundam">Gundam</option>
+						<option value="honkai star rail">Honkai Star Rail</option>
+						<option value="genshin impact">Genshin Impact</option>
+						<option value="zenless zone zero">Zenless Zone Zero</option>
+						<option value="honkai impact 3">Honkai Impact 3</option>
+					</select><br>
+					<label for="productprice">Giá</label>
+					<input type="text" id="productprice">
+					<label>Thêm hình ảnh sản phẩm</label>
+					<input type="file" onchange="changeimgadd(this)"><br>
+					<button type="button" onClick="addProduct()">Thêm</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- phần Javascript -->
+	<div id="modal1" class="modal">
+		<div id="changeproduct">
+			<button class="close" onclick="closechangebox()">&times;</button>
+			<div class="image">
+				<img id="imgbefore" src="">
+				<img id="imgafter" src="">
+			</div>
+			<div class="info">
+				<label for="name">Tên sản phẩm</label>
+				<input type="text" id="name" value="Mô hình Elysia - Honkai Impact 3 - Hakimi Studio"><br>
+				<label for="name">Giá</label>
+				<input type="text" id="price" value="2500000"><br>
+				<input type="file" id="fileimg" onchange="changeimg(this)">
+			</div>
+			<button id="save">Lưu chỉnh sửa</button>
+		</div>
+	</div>
+</div>
+<div id="customalert"></div>
+<script src="admin.js"></script>
+</body>
+</html>
