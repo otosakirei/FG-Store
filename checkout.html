@@ -52,20 +52,29 @@
 
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="product-list.html" class="nav-item nav-link">Sản phẩm</a>
-                            <a href="product-detail.html" class="nav-item nav-link">chi tiết sản phẩm</a>
-                            <a href="cart.html" class="nav-item nav-link">giỏ hàng</a>
-                            <a href="checkout.html" class="nav-item nav-link active">thanh toán</a>
+                            <a href="home.html" class="nav-item nav-link active">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown">Sản Phẩm</a>
+                                <div class="dropdown-menu">
+                                    <a href="hsr.html" class="dropdown-item">Honkai Star Rail</a>
+                                    <a href="genshin2.html" class="dropdown-item">Genshin Impact</a>
+                                    <a href="zzz2.html" class="dropdown-item">Zenless Zone Zero</a>
+                                    <a href="hi32.html" class="dropdown-item">Honkai Impact 3</a>
+                                    <a href="GUNDAM2.html" class="dropdown-item">Gundam</a>
+                                </div>
+                            </div>
+                            <a href="exsearch2.html" class="nav-item nav-link">Tìm kiếm nâng cao</a>
+                            
+                            
                             <a href="my-account.html" class="nav-item nav-link">tài khoản</a>
                             
                         </div>
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
-                                <a href="login.html" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                                <a href="login.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Nguyễn Trọng Khang</a>
                                 <div class="dropdown-menu">
-                                    <a href="login.html" class="dropdown-item">Login</a>
-                                    <a href="login2.html" class="dropdown-item">Register</a>
+                                    <a href="index.html" class="dropdown-item">Đăng Xuất</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -81,7 +90,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-3">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="home.html">
                                 <img src="img/ry.webp" alt="Logo">
                             </a>
                         </div>
@@ -89,18 +98,20 @@
                     <div class="col-md-6">
                         <div class="search">
                             <input type="text" placeholder="Search">
+                            <a href="timkiem2.html">
                             <button><i class="fa fa-search"></i></button>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="user">
-                            <a href="wishlist.html" class="btn wishlist">
+                            <a href="wishlist2.html" class="btn wishlist">
                                 <i class="fa fa-heart"></i>
-                                <span>(0)</span>
+                                <span>(5)</span>
                             </a>
-                            <a href="cart.html" class="btn cart">
+                            <a href="cart2.html" class="btn cart">
                                 <i class="fa fa-shopping-cart"></i>
-                                <span>(0)</span>
+                                <span>(5)</span>
                             </a>
                         </div>
                     </div>
@@ -113,8 +124,8 @@
         <div class="breadcrumb-wrap">
             <div class="container-fluid">
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="cart.html">Giỏ hàng</a></li>
+                    <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="cart2.html">Giỏ hàng</a></li>
                     <li class="breadcrumb-item active">Thanh toán</li>
                 </ul>
             </div>
@@ -132,37 +143,37 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>Họ</label>
-                                        <input class="form-control" type="text" placeholder="Họ">
+                                        <input class="form-control" type="text" placeholder="Họ" value="Nguyễn">
                                     </div>
                                     <div class="col-md-6">
                                         <label>Tên</label>
-                                        <input class="form-control" type="text" placeholder="Tên">
+                                        <input class="form-control" type="text" placeholder="Tên" value="Văn A">
                                     </div>
                                     <div class="col-md-6">
                                         <label>E-mail</label>
-                                        <input class="form-control" type="text" placeholder="E-mail">
+                                        <input class="form-control" type="text" placeholder="E-mail" value="inoriyuzuriha1808@gmail.com">
                                     </div>
                                     <div class="col-md-6">
                                         <label>Số điện thoại</label>
-                                        <input class="form-control" type="text" placeholder="Số điện thoại">
+                                        <input class="form-control" type="text" placeholder="Số điện thoại" value="025485862">
                                     </div>
                                     <div class="col-md-12">
                                         <label>Địa chỉ</label>
-                                        <input class="form-control" type="text" placeholder="Địa chỉ">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Quốc gia</label>
-                                        <select class="custom-select">
-                                            <option selected>Việt Nam</option>
-                                            <option>Afghanistan</option>
-                                            <option>Singapor</option>
-                                            <option>Trung Quốc</option>
-                                            <option>Thái Lan</option>
-                                        </select>
+                                        <input class="form-control" type="text" placeholder="Địa chỉ" value="273 Đ. An Dương Vương, Phường 3, Hồ Chí Minh">
                                     </div>
                                     <div class="col-md-6">
                                         <label>Thành phố</label>
-                                        <input class="form-control" type="text" placeholder="City">
+                                        <select class="custom-select">
+                                            <option selected>TP.HCM</option>
+                                            <option>Hà Nội</option>
+                                            <option>Cần Thơ</option>
+                                            <option>Long An</option>
+                                            <option>Thủ Đức</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Quận</label>
+                                        <input class="form-control" type="text" placeholder="Quận" value="Quận 5">
                                     </div>                                                                    
                                     
                                 </div>
@@ -174,74 +185,78 @@
                     <div class="col-lg-4">
                         <div class="checkout-inner">
                             <div class="checkout-summary">
-                                <h1>Cart Total</h1>
-                                <p>Product Name<span>$99</span></p>
-                                <p class="sub-total">Sub Total<span>$99</span></p>
-                                <p class="ship-cost">Shipping Cost<span>$1</span></p>
-                                <h2>Grand Total<span>$100</span></h2>
+                                <h1>Tổng hóa đơn</h1>
+                                <p>Elysia-Hakimi Studio<span>12.000.000đ</span></p>
+                                <p>Furina-Miyin Studio<span>4.800.000đ</span></p>
+                                <p>Kafka: Star Rail Live ver<span>1.200.000đ</span></p>
+                                <p class="sub-total">Tiền Hàng<span>18.000.000đ</span></p>
+                                <p class="ship-cost">Phí Ship<span>0đ</span></p>
+                                <h2>Tổng Cộng<span>18.000.000đ</span></h2>
                             </div>
 
                             <div class="checkout-payment">
                                 <div class="payment-methods">
-                                    <h1>Payment Methods</h1>
+                                    <h1>Phương Thức Thanh Toán</h1>
                                     <div class="payment-method">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="payment-1" name="payment">
-                                            <label class="custom-control-label" for="payment-1">Paypal</label>
+                                            <label class="custom-control-label" for="payment-1">MOMO</label>
                                         </div>
                                         <div class="payment-content" id="payment-1-show">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                            03******155
                                             </p>
                                         </div>
                                     </div>
                                     <div class="payment-method">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="payment-2" name="payment">
-                                            <label class="custom-control-label" for="payment-2">Payoneer</label>
+                                            <label class="custom-control-label" for="payment-2">Zalo Pay</label>
                                         </div>
                                         <div class="payment-content" id="payment-2-show">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                                09******451
                                             </p>
                                         </div>
                                     </div>
                                     <div class="payment-method">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="payment-3" name="payment">
-                                            <label class="custom-control-label" for="payment-3">Check Payment</label>
+                                            <label class="custom-control-label" for="payment-3">Visa</label>
                                         </div>
                                         <div class="payment-content" id="payment-3-show">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                                54*********89
                                             </p>
                                         </div>
                                     </div>
                                     <div class="payment-method">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="payment-4" name="payment">
-                                            <label class="custom-control-label" for="payment-4">Direct Bank Transfer</label>
+                                            <label class="custom-control-label" for="payment-4">Credit</label>
                                         </div>
                                         <div class="payment-content" id="payment-4-show">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                                147******24
                                             </p>
                                         </div>
                                     </div>
                                     <div class="payment-method">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="payment-5" name="payment">
-                                            <label class="custom-control-label" for="payment-5">Cash on Delivery</label>
+                                            <label class="custom-control-label" for="payment-5">COD</label>
                                         </div>
                                         <div class="payment-content" id="payment-5-show">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
+                                                Chúng tôi sẽ giao hàng trong thới gian nhanh nhất!!!
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="checkout-btn">
-                                    <button>Place Order</button>
+                                    <button type="button" class="btn"> 
+                                        <a href="my-account.html" style="color: inherit; text-decoration: none;">THANH TOÁN</a>
+                                   </button>
                                 </div>
                             </div>
                         </div>

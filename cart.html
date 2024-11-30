@@ -52,20 +52,29 @@
 
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="product-list.html" class="nav-item nav-link">Sản phẩm</a>
-                            <a href="product-detail.html" class="nav-item nav-link">chi tiết sản phẩm</a>
-                            <a href="cart.html" class="nav-item nav-link active">giỏ hàng</a>
-                            <a href="checkout.html" class="nav-item nav-link">thanh toán</a>
-                            <a href="my-account.html" class="nav-item nav-link">tài khoản</a>
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown">Sản Phẩm</a>
+                                <div class="dropdown-menu">
+                                    <a href="product-list.html" class="dropdown-item">Honkai Star Rail</a>
+                                    <a href="genshin.html" class="dropdown-item">Genshin Impact</a>
+                                    <a href="zzz.html" class="dropdown-item">Zenless Zone Zero</a>
+                                    <a href="HI3.HTML" class="dropdown-item">Honkai Impact 3</a>
+                                    <a href="GUNDAM.html" class="dropdown-item">Gundam</a>
+                                </div>
+                            </div>
+                            <a href="exsearch.html" class="nav-item nav-link">Tìm kiếm nâng cao</a>
+                            
+                            
+                           
                             
                         </div>
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
-                                <a href="login.html" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                                <a href="login.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Tài khoản</a>
                                 <div class="dropdown-menu">
-                                    <a href="login.html" class="dropdown-item">Login</a>
-                                    <a href="login.html" class="dropdown-item">Register</a>
+                                    <a href="dangnhap.html" class="dropdown-item">Đăng Nhập</a>
+                                    <a href="dangnhap.html" class="dropdown-item">Đăng Ký</a>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +98,9 @@
                     <div class="col-md-6">
                         <div class="search">
                             <input type="text" placeholder="Search">
+                            <a href="timkiem.html">
                             <button><i class="fa fa-search"></i></button>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -114,7 +125,7 @@
             <div class="container-fluid">
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Cart</li>
+                    <li class="breadcrumb-item active">Giỏ hàng</li>
                 </ul>
             </div>
         </div>
@@ -134,7 +145,7 @@
                                             <th>Gía</th>
                                             <th>Số lượng</th>
                                             <th>Tổng Cộng</th>
-                                            <th>Remove</th>
+                                            <th>Xóa</th>
                                         </tr>
                                     </thead>
                                     <tbody class="align-middle">
@@ -142,10 +153,10 @@
                                             <td>
                                                 <div class="img">
                                                     <a href="product-detail.html"><img src="img/elysia.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <p>Mô hình Elysia  - Hakimi Studio</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>12.000.000đ</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -153,17 +164,17 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td>12.000.00đ</td>
+                                            <td><button class="btn-delete"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
                                                     <a href="product-detail.html"><img src="img/miko2.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <p>Yae Miko- Imagination Studio</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>16.000.00đ</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -171,17 +182,17 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td>16.000.00đ</td>
+                                            <td><button class="btn-delete"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
                                                     <a href="product-detail.html"><img src="img/gundam.png" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <p>RX-78-2 GUNDAM</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>6.000.000đ</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -189,17 +200,17 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td>6.000.000đ</td>
+                                            <td><button class="btn-delete"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
                                                     <a href="product-detail.html"><img src="img/kiana2.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <p>Kiana Kaslana: Evening Invite - Honkai Impact 3 - miHoYo & APEX</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>4.500.000đ</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -207,17 +218,17 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td>4.500.000đ</td>
+                                            <td><button class="btn-delete"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
                                                     <a href="product-detail.html"><img src="img/see.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <p>Veliona & Seele Vollerei- APEX Toys x miHoYo</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>6,000,000đ</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -225,8 +236,8 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td>6,000,000đ</td>
+                                            <td><button class="btn-delete"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -239,20 +250,20 @@
                                 <div class="col-md-12">
                                     <div class="coupon">
                                         <input type="text" placeholder="Nhập mã giảm giá">
-                                        <button>Mã giảm giá</button>
+                                        <button>Áp mã</button>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="cart-summary">
                                         <div class="cart-content">
                                             <h1>CHI TIẾT THANH TOÁN</h1>
-                                            <p>TIỀN HÀNG<span>$99</span></p>
-                                            <p>PHÍ SHIP<span>$1</span></p>
-                                            <h2>TỔNG CỘNG<span>$100</span></h2>
+                                            <p>TIỀN HÀNG<span>44.500.000đ</span></p>
+                                            <p>PHÍ SHIP<span>15.000đ</span></p>
+                                            <h2>TỔNG CỘNG<span>44.515.000đ</span></h2>
                                         </div>
                                         <div class="cart-btn">
-                                            <a href="checkout.html"><button>Thanh Toán</button></a>
-                                            <a href="checkout.html"><button>Update Cart</button></a>
+                                            <a href="dangnhap.html"><button>Thanh Toán</button></a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -364,5 +375,15 @@
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            // Xóa sản phẩm
+            document.querySelectorAll('.btn-delete').forEach(button => {
+                button.addEventListener('click', function () {
+                    const row = this.closest('tr'); // Lấy hàng chứa nút xóa
+                    row.remove(); // Xóa hàng khỏi bảng
+                    alert('Sản phẩm đã được xóa khỏi giỏ hàng');
+                });
+            });
+        </script>
     </body>
 </html>
